@@ -1,0 +1,288 @@
+{% extends 'mining/base.html' %}
+{% block content %}
+
+	<!-- services -->
+	<div class="services">
+		<div class="services-top">
+			<div class="services-info">
+				<h3>{{ product | title}}</h3>
+				<p>is a highly pure and bright Calcium Carbonate product produced from our limestone quarries in Minia.
+						 </p>
+			</div>
+			<div class="welcome {{ product }}">
+				<div class="welcome-left offer-left services-left">
+
+
+					<h3>{{ product | title }} Physical Characteristics</h3>
+
+					{% if product == 'm2' %}
+					<p>
+<strong>Density 2.7 g/ml</strong><br />
+<strong>Refractive index 1.59</strong><br />
+<strong>pH value (ISO 787/9) 9.0</strong><br />
+<strong>Bulk density 1.4g/cm3</strong><br />
+<strong>Hardness in Moh's Scale 3</strong><br />
+<strong>Moisture 0.2 %</strong>
+
+					</p>
+					{% elif product == "m3" %}
+					<p>
+
+
+					</p>
+					{% elif product == "m4" %}
+					<p> <strong>Density 2.7 g/ml</strong><br />
+<strong>Refractive index 1.59</strong><br />
+<strong>pH value (ISO 787/9) 9.0 Max.</strong><br />
+<strong>Bulk density 1.2 g/cm3</strong><br />
+<strong>Hardness (Moh's Scale) 3</strong><br />
+<strong>Moisture 0.2 %</strong><br />
+					</p>
+					 {% elif product == "m5" %}
+					<p>  </p>
+					 {% elif product == "m6" %}
+					<p> <strong>Density 2.7 g/ml</strong><br />
+<strong>Refractive index 1.59</strong><br />
+<strong>pH value (ISO 787/9) 9.0 Max.</strong><br />
+<strong>Bulk density 1.2 g/cm3</strong><br />
+<strong>Hardness (Moh's Scale) 3</strong><br />
+<strong>Moisture 0.2 %</strong><br />
+ </p>
+					 {% elif product == "m7" %}
+					<p> <strong>Density 2.7 g/ml</strong><br />
+<strong>Refractive index 1.59</strong><br />
+<strong>pH value (ISO 787/9) 9.0</strong><br />
+<strong>Bulk density 1.2 g/cm3</strong><br />
+<strong>Hardness in Mohs 3</strong><br />
+<strong>Moisture 0.2 %</strong><br />
+ </p>
+					 {% elif product == "m8" %}
+					<p>  </p>
+					 {% elif product == "m9" %}
+					<p>  <strong>Density 2.7 g/ml</strong><br />
+<strong>Refractive index 1.59</strong><br />
+<strong>pH value (ISO 787/9) 9.0 Max.</strong><br />
+<strong>Bulk density 1.2 g/cm3</strong><br />
+<strong>Hardness (Moh's Scale) 3</strong><br />
+<strong>Moisture 0.2 %</strong><br />
+</p>
+					 {% elif product == "m10" %}
+					<p> <strong>Density 2.7 g/ml</strong><br />
+<strong>Refractive index 1.59</strong><br />
+<strong>pH value (ISO 787/9) 9.0 Max.</strong><br />
+<strong>Bulk density 1.2 g/cm3</strong><br />
+<strong>Hardness (Moh's Scale) 3</strong><br />
+<strong>Moisture 0.2 %</strong><br />
+ </p>
+					 {% elif product == "m11" %}
+					<p> <strong>Density 2.7 g/ml</strong><br />
+<strong>Refractive index 1.59</strong><br />
+<strong>pH value (ISO 787/9) 9.0 Max.</strong><br />
+<strong>Bulk density 1.2 g/cm3</strong><br />
+<strong>Hardness (Moh's Scale) 3</strong><br />
+<strong>Moisture 0.2 %</strong><br />
+ </p>
+					 {% elif product == "m12" %}
+					<p><strong>Density 2.7 g/ml</strong><br />
+<strong>Refractive index 1.59</strong><br />
+<strong>pH value (ISO 787/9) 9.0 Max.</strong><br />
+<strong>Bulk density 1.2 g/cm3</strong><br />
+<strong>Hardness (Moh's Scale) 3</strong><br />
+<strong>Moisture 0.2 %</strong><br />
+  </p>
+					 {% elif product == "m96" %}
+					<p>
+						<strong>Density 2.7 g/ml</strong><br />
+<strong>Refractive index 1.59</strong><br />
+<strong>pH value (ISO 787/9) 9.0 Max.</strong><br />
+<strong>Bulk density 1.2 g/cm3</strong><br />
+<strong>Hardness (Moh's Scale) 3</strong><br />
+<strong>Moisture 0.2 %</strong><br />
+  </p>
+					{% endif %}
+
+				</div>
+				<div class="welcome-right services-right">
+
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="welcome new {{ product }}">
+				<div class="welcome-left new-left services-left">
+					<h3>{{ product | title }} Chemical Analysis</h3>
+					<p>
+							{% if product == 'm2' %}
+					<p>
+<strong>CaCO3: 99.6%</strong><br />
+<strong>CaO: 55.40%</strong><br />
+<strong>MgO: 0.15%%</strong><br />
+<strong>Fe2O3: 0.001%</strong><br />
+<strong>Al2O3: 0.001%</strong><br />
+<strong>SiO2: 0.01%</strong><br />
+<strong>L.O.I: 44.02%</strong><br />
+<h4>Grain size specs</h4>
+
+<strong>Standard size (2 – 3) MM.</strong><br>
+<strong>4 % more than 3 MM.</strong><br>
+<strong>0.5 % less than 100 Mic.</strong><br>
+<strong>More than 90 % between (1.5 - 3) MM .</strong><br>
+
+
+					</p>
+					{% elif product == "m3" %}
+					<p>
+
+
+					</p>
+					{% elif product == "m4" %}
+					<p>
+
+						<strong>CaCO3: 99.6%</strong><br />
+<strong>CaO: 55.40%</strong><br />
+<strong>MgO: 0.15%</strong><br />
+<strong>Fe2O3: 0.001%</strong><br />
+<strong>Al2O3: 0.001%</strong><br />
+<strong>SiO2: 0.01%</strong><br />
+<strong>L.O.I: 44.02%</strong><br />
+<h4>Grain size specs</h4>
+
+					<strong>Over 2 .5 mm = 0 %.</strong><br>
+<strong>10 % less than 710 μ.</strong><br>
+<strong>More than 80 % between 710μ and 2mm.</strong><br>
+<strong>Under 106 μ ≤ 1 %.</strong><br>
+
+
+					</p>
+					 {% elif product == "m5" %}
+					<p>  </p>
+					 {% elif product == "m6" %}
+					<p> <strong>CaCO3: 99.6%</strong><br />
+<strong>CaO: 55.40%</strong><br />
+<strong>MgO: 0.15%</strong><br />
+<strong>Fe2O3: 0.001%</strong><br />
+<strong>Al2O3: 0.001%</strong><br />
+<strong>SiO2: 0.01%</strong><br />
+<strong>L.O.I: 44.02%</strong><br />
+<h4>Grain size specs</h4>
+
+					<strong>Over 2 mm = 0 %.</strong><br>
+<strong>80 % between 500 μ and 1.4 mm.</strong><br>
+<strong>5 % over 1.4 mm.</strong><br>
+<strong>Under 106 μ ≤ 3 %.</strong><br>
+
+ </p>
+					 {% elif product == "m7" %}
+					<p>
+						<strong>CaCO3: 99.6%</strong><br />
+<strong>CaO: 55.60%</strong><br />
+<strong>MgO: 0.15%</strong><br />
+<strong>Fe2O3: 0.001%</strong><br />
+<strong>Al2O3: 0.001%</strong><br />
+<strong>SiO2: 0.01%</strong><br />
+<strong>L.O.I: 44.02%</strong><br />
+<h4>Grain size specs</h4>
+					<strong>Filter 1 dust</strong><br>
+<strong>97 % less than 100 μ.</strong><br>
+
+ </p>
+					 {% elif product == "m8" %}
+					<p>  </p>
+					 {% elif product == "m9" %}
+					<p>
+						<strong>CaCO3: 99.6%</strong><br />
+<strong>CaO: 55.40%</strong><br />
+<strong>MgO: 0.15%</strong><br />
+<strong>Fe2O3: 0.001%</strong><br />
+<strong>Al2O3: 0.001%</strong><br />
+<strong>SiO2: 0.01%</strong><br />
+<strong>L.O.I: 44.02%</strong><br />
+<h4>Grain size specs</h4>
+					<strong>Over 500μ ≤ 10 %.</strong><br>
+<strong>43% between 250 μ and 500 μ.</strong><br>
+<strong>44 % between 100 μ and 250 μ .</strong><br>
+<strong>Under 100μ = 5%.</strong><br>
+
+</p>
+					 {% elif product == "m10" %}
+					<p>
+						<strong>CaCO3: 99.6</strong><br />
+<strong>CaO: 55.40</strong><br />
+<strong>MgO: 0.15</strong><br />
+<strong>Fe2O3: 0.001</strong><br />
+<strong>Al2O3: 0.001</strong><br />
+<strong>SiO2: 0.01</strong><br />
+<strong>L.O.I: 44.02</strong><br />
+<h4>Grain size specs</h4>
+					<strong>Over 500 μ = 0 %.</strong><br>
+<strong>Over 250 μ = ≤ 0.5 %.</strong><br>
+<strong>Over 75 μ = 15 % ≤ X ≤ 30 %.</strong><br>
+
+
+ </p>
+					 {% elif product == "m11" %}
+					<p>
+						<strong>CaCO3 99.6%</strong><br />
+<strong>CaO: 55.40%</strong><br />
+<strong>MgO: 0.15%</strong><br />
+<strong>Fe2O3: 0.001%</strong><br />
+<strong>Al2O3: 0.001%</strong><br />
+<strong>SiO2: 0.01%</strong><br />
+<strong>L.O.I: 44.02%</strong><br />
+<h4>Grain size specs</h4>
+					<strong>Over 500 μ = 0 %.</strong><br>
+<strong>Over 250 μ = ≤ 0.5 %.</strong><br>
+<strong>Over 170 μ = ≤ 3 %.</strong><br>
+
+ </p>
+					 {% elif product == "m12" %}
+					<p>
+						<strong>CaCO3: 99.6%</strong><br />
+<strong>CaO: 55.40%</strong><br />
+<strong>MgO: 0.15%</strong><br />
+<strong>Fe2O3: 0.001%</strong><br />
+<strong>Al2O3: 0.001%</strong><br />
+<strong>SiO2: 0.01%</strong><br />
+<strong>L.O.I: 44.02%</strong><br />
+<h4>Grain size specs</h4>
+
+					<strong>D97 = 45 micron</strong><br>
+<strong>D50 = 11.2 micron</strong><br>
+<strong>2 μ = 12.3 %.</strong><br>
+
+
+  </p>
+					 {% elif product == "m96" %}
+					<p>
+						 <strong>CaCO3: 99.6%</strong><br />
+<strong>CaO: 55.40%</strong><br />
+<strong>MgO: 0.15%</strong><br />
+<strong>Fe2O3: 0.001%</strong><br />
+<strong>Al2O3: 0.001%</strong><br />
+<strong>SiO2: 0.01%</strong><br />
+<strong>L.O.I: 44.02%</strong><br />
+
+						<br/>
+						<h4>Grain size specs</h4>
+ <strong>Over 1 mm ≤ 10 %.</strong><br />
+<strong>More than 80 % between 100 μ and 1.0 mm.</strong><br />
+<strong>Under 106 μ ≤ 10 %.</strong><br />
+  </p>
+					{% endif %}
+					<br/>
+
+					The data in the Technical Data Sheet represents average values which are valid and reliable but not legally binding.
+MCC will not be liable for any use of data, or any damages arising from the use of products for purposes not
+examined in detail.
+					</p>
+				</div>
+				<div class="welcome-right new-{{ product }} services-right-img">
+
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+
+	</div>
+	<!-- //services -->
+
+{% endblock %}

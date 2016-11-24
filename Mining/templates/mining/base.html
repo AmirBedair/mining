@@ -1,0 +1,126 @@
+{% load staticfiles %}
+
+<html>
+<head>
+<title>     {% block title %}
+     {% endblock %}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Mining Limeston Powder " />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstarp-css -->
+<link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!--// bootstarp-css -->
+<!-- css -->
+<link rel="stylesheet" href="/static/css/style.css" type="text/css" media="all" />
+<!--// css -->
+<script src="/static/js/jquery-1.11.1.min.js"></script>
+<script src="/static/js/modernizr.custom.js"></script>
+</head>
+<body>
+	<!-- banner -->
+	<div class="banner">
+		<div class="banner-content">
+			<div class="logo">
+				<a href="/mining/">Mining</a>
+			</div>
+			<div class="top-nav">
+				<span class="menu">MENU</span>
+				<ul class="nav1 cl-effect-15">
+					<li><a href="/mining/" data-hover="Home">Home</a></li>
+					<li><a href="/mining/about" data-hover="About">About</a></li>
+					<li><a href="/mining/services" data-hover="Servicesd">Services</a></li>
+					<li><a href="/mining/products" data-hover="Products">Products</a></li>
+					<li><a href="/mining/gallery" data-hover="Gallery">Gallery</a></li>
+					<li><a href="/mining/contact" data-hover="Contact">Contact</a></li>
+				</ul>
+				<!-- script-for-menu -->
+					<script>
+						 $( "span.menu" ).click(function() {
+						$( "ul.nav1" ).slideToggle( 300, function() {
+						// Animation complete.
+							});
+							});
+					</script>
+				<!-- /script-for-menu -->
+			</div>
+			<div class="banner-slid">
+				<script src="js/responsiveslides.min.js"></script>
+					<script>
+						// You can also use "$(window).load(function() {"
+						$(function () {
+						  // Slideshow 4
+						  $("#slider3").responsiveSlides({
+							auto: true,
+							pager: true,
+							nav: false,
+							speed: 500,
+							namespace: "callbacks",
+							before: function () {
+							  $('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+							  $('.events').append("<li>after event fired.</li>");
+							}
+						  });
+
+						});
+					</script>
+					<div  id="top" class="callbacks_container">
+						<ul class="rslides" id="slider3">
+							<li>
+								<div class="banner-info">
+									<h5>Egypt Limestone</h5>
+									<p>Egypt Limestone is Rapidly growing company apply quality standards on our & Partners limestone factories in Egypt.</p>
+								</div>
+							</li>
+							<li>
+								<div class="banner-info">
+									<h5>Why Egypt Limestone</h5>
+									<p> We apply and enforce highest quality standards; Our Quality Control Labs monitor the quality of the final products. <b>Free Samples Shipping Worldwide!</b>
+									</p>
+								</div>
+							</li>
+							<li>
+								<div class="banner-info">
+									<h5>Egypt Limeston Products</h5>
+									<p>We offer various grain sizes, high purity CaCO3 > 99.5, high whiteness Brightness > 96% <a href="/products"> check our products </a>
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+			</div>
+			<div class="header-address">
+				<ul>
+					<li class="phone-img"><a href="tel:+201026222122">Ph : +201026222122</a></li>
+					<li class="phone-img"><a href="tel:+201225883625">Ph : +201225883625</a></li>
+					<li><a href="mailto:example@email.com">E-mail : contact@egyptlimestone.com</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+     {% block content %}
+     {% endblock %}
+	<!-- footer -->
+	<div class="footer">
+		<!-- container -->
+		<div class="container">
+			<div class="footer-info">
+				<h3>Contact</h3>
+				<p class="f-address">195 N90 Axis, New Cairo, Cairo , Egypt.</p>
+				<ul>
+					<li><a href="#" class="facebook"> </a>
+					<li><a href="https://www.facebook.com/EgyptLimestone-293675557693941" class="facebook twitter"> </a>
+					<li><a href="https://business.google.com/b/114110376939978337043/" class="facebook chrome"> </a>
+
+				</ul>
+				<p class="copyright"> © 2016 Egypt Limestone. All rights reserved | Design by <a href="http://PSMHome.com">PSMHome.com</a></p>
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //footer -->
+</body>
+</html>
