@@ -5,7 +5,9 @@ from django.core.mail import EmailMessage
 from django.shortcuts import redirect, render
 from django.template import Context
 from django.template.loader import get_template
-
+from django.http import Http404
+from django.shortcuts import render
+from .models import Product
 
 def index(request):
     template = loader.get_template('mining/index.html')
@@ -15,7 +17,12 @@ def index(request):
     return HttpResponse(template.render(context, request))
 
 def product(request, product):
-    return render(request, 'mining/product.html', {'product': product})
+    try:
+        prod = Product.objects.get(name=product)
+        return render(request, 'mining/product.html', {'product': prod})
+    except prod.DoesNotExist:
+        raise Http404("Product does not exist")
+
 
 def services(request):
     template = loader.get_template('mining/services.html')
